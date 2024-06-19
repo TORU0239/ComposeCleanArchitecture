@@ -55,17 +55,11 @@ class MainActivity : ComponentActivity() {
                     },
                     content = { innerPadding ->
                         Column(modifier = Modifier.padding(innerPadding)) {
-                            Spacer(modifier = Modifier
-                                .height(10.dp)
-                            )
                             Greeting(
                                 name = "Android",
                                 modifier = Modifier
                                     .padding(16.dp)
                                     .wrapContentSize()
-                            )
-                            Spacer(modifier = Modifier
-                                .height(10.dp)
                             )
                             ScrollBoxes()
                         }
